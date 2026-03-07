@@ -309,14 +309,6 @@ const App = () => {
 
 </div>
 
-
-{/* <div>
-  <div className='div10page'>
-    <h1>Сколько я могу пользоваться своими данными?</h1>
-    <img src={iks} alt="" />
-  </div>
-</div> */}
-
     </div>
   )
 }
