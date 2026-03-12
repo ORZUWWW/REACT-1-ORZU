@@ -62,13 +62,6 @@ const App = () => {
     setdata(newdata);
   };
 
-  // let add=(e)=>{
-  //   e.preventDefault()
-  //   let obj={
-  //     name:
-  //   }
-  // }
-
   let ch = (id) => {
     let newdata = data.map((e) => {
       if (e.id == id) {
