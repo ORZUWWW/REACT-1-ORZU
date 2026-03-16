@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "name": "Lillie Pfannerstill",
+      "age": 37,
+      "status": true,
+      "id": "5"
+    },
+    {
+      "name": "Kristi Heidenreich-Jacobson",
+      "status": true,
+      "age": 67,
+      "id": "6"
+    },
+    {
+      "name": "Harry Walter",
+      "age": "311",
+      "status": false,
+      "id": "7"
+    },
+    {
+      "name": "Tony Jacobs DVM",
+      "age": "57777",
+      "status": false,
+      "id": "8"
+    },
+    {
+      "name": "ORZUUU",
+      "age": "21",
+      "status": true,
+      "id": "9"
+    },
+    {
+      "name": "Ismael Crist",
+      "status": true,
+      "age": 29,
+      "id": "10"
+    },
+    {
+      "name": "Jacquelyn Jones-O'Reilly",
+      "status": false,
+      "age": 88,
+      "id": "11"
+    },
+    {
+      "id": "9",
+      "name": "ORZU",
+      "age": "21",
+      "status": true
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

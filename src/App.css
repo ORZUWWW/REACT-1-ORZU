@@ -9,10 +9,11 @@ table{
 th{
   padding: 12px; 
   border: 1px solid gray;
-  text-align: center;
+  text-align: start;
 }
 td{
   padding: 12px; 
   border: 1px solid gray;
+  font-size: 20px;
 }
 
