@@ -88,6 +88,7 @@ let [status,setstatus]=useState(null)
   const handleClose = () => {
     setOpen(false);
   };
+  
   const editopen = () => {
     seteditOpen(true);
   };
@@ -316,9 +317,19 @@ let [status,setstatus]=useState(null)
             <TableRow key={row.id} hover>
               <TableCell><input checked={row.status} onClick={()=>ch(row)} type="checkbox"/></TableCell>
               <TableCell>{row.id}</TableCell>
-              <TableCell>{row.name}</TableCell>
+              <TableCell>
+                <div className="flex items-center gap-[10px]">
+                <img className="w-[35px] rounded-[50%]" src={row.img} alt="" />
+                <div className="flex flex-col">
+                <h1 className="text-[18px]">{row.name}</h1>
+               <p> {row.job}</p>
+                </div>
+                </div>
+                
+                
+                </TableCell>
               <TableCell>{row.age}</TableCell>
-              <TableCell >{row.status?"Active":"Inactive"}</TableCell>
+              <TableCell>{row.status?"Active":"Inactive"}</TableCell>
               <TableCell><Button onClick={() => { xx(row);editopen();}} variant="contained" size="small">EDITE</Button> <IconButton onClick={()=>del(row.id)} aria-label="delete" size="large">
         <DeleteIcon fontSize="inherit" />
       </IconButton> </TableCell>
