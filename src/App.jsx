@@ -80,6 +80,9 @@ let [editname,setname]=useState("")
 let [editage,setage]=useState("")
 let [idx,setidx]=useState(null)
 let [status,setstatus]=useState(null)
+let [editjob,setjob]=useState("")
+let [editimg,setimg]=useState("")
+
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -103,7 +106,9 @@ let [status,setstatus]=useState(null)
       await axios.post(url,{
         name:e.target["name"].value,
         age:e.target["age"].value,
-        status:true
+        status:true,
+        job:e.target["job"].value,
+        img:e.target["img"].value
       })
       get()
       handleClose()
@@ -118,6 +123,8 @@ let [status,setstatus]=useState(null)
     setage(e.age)
     setidx(e.id)
     setstatus(e.status)
+    setimg(e.img)
+    setjob(e.job)
     editopen();
   }
 
@@ -129,7 +136,9 @@ let [status,setstatus]=useState(null)
           name:editname,
           age:editage,
           status:status,
-          id:idx
+          id:idx,
+          job:editjob,
+          img:editimg
         })
         get()
         editclose()
@@ -205,6 +214,28 @@ let [status,setstatus]=useState(null)
               id="age"
               name="age"
               label="Age"
+              type="text"
+              fullWidth
+              variant="standard"
+              />
+             <TextField
+              autoFocus
+              required
+              margin="dense"
+              id="img"
+              name="img"
+              label="Image"
+              type="text"
+              fullWidth
+              variant="standard"
+              />
+             <TextField
+              autoFocus
+              required
+              margin="dense"
+              id="job"
+              name="job"
+              label="Job"
               type="text"
               fullWidth
               variant="standard"
@@ -286,6 +317,32 @@ let [status,setstatus]=useState(null)
               variant="standard"
               value={editage}
               onChange={(e) => setage(e.target.value)}
+              />
+             <TextField
+              autoFocus
+              required
+              margin="dense"
+              id="Job"
+              name="job"
+              label="Job"
+              type="text"
+              fullWidth
+              variant="standard"
+              value={editjob}
+              onChange={(e) => setjob(e.target.value)}
+              />
+             <TextField
+              autoFocus
+              required
+              margin="dense"
+              id="img"
+              name="img"
+              label="Image"
+              type="text"
+              fullWidth
+              variant="standard"
+              value={editimg}
+              onChange={(e) => setimg(e.target.value)}
               />
           </form>
         </DialogContent>
