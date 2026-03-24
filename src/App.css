@@ -1,18 +1,12 @@
 @import "tailwindcss";
-table{
-  width: 80%;
-  border-collapse:collapse;
-  margin: auto;
-  margin-top: 30px;
-}
 
-th{
-  padding: 12px; 
-  border: 1px solid gray;
-  text-align: center;
-}
-td{
-  padding: 12px; 
-  border: 1px solid gray;
+.bgg{
+  background-image: url(../src/images/bg.png);
+  width: 100%;
+  height: 350px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
