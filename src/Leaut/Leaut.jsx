@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link, Outlet } from 'react-router'
+import React from "react";
+import { Link, Outlet } from "react-router";
 
-const Leaut = () => {
+const Layout = () => {
   return (
     <div>
-      <nav>
-        <Link to={"/"} >Home</Link>
-        <Link to={"/About"} >About</Link>
-      </nav>
-      <Outlet />
+    <nav>
+<Link to={"/"} >Home</Link>
+<Link to={"/About"} >About</Link>
+    </nav>
+    <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Leaut
+export default Layout;
