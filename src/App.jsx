@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import './App.css'
 import axios from 'axios'
 import { Route, Router, Routes } from 'react-router'
-import Leaut from './Leaut/Leaut'
-import Home from './page/Home'
-import About from './Page/About'
+import CircularProgress from '@mui/material/CircularProgress'
+
+
+
+let Home=lazy(()=>import("./Page/Home"))
+let Leaut=lazy(()=>import("./Leaut/Leaut"))
+let About=lazy(()=>import("./Page/About"))
+
 const App = () => {
 
   return <Routes>
   <Route path='/' element={<Leaut />}  >
  <Route index element={<Home />} />
- <Route path='/About' element={<About />} />
+ <Route path='/About' element={
+  <Suspense fallback={<CircularProgress enableTrackSlot size="30px" />}>
+    <About />
+  </Suspense>
+  } />
   </Route>
   </Routes>
 }
