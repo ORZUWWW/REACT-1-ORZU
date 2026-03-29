@@ -1,18 +1,16 @@
-import React from 'react'
-import './App.css'
-import axios from 'axios'
-import { Route, Router, Routes } from 'react-router'
-import Leaut from './Leaut/Leaut'
-import Home from './page/Home'
-import About from './Page/About'
-const App = () => {
+import { Routes, Route } from "react-router-dom";
+import Home from "./page/Home";
+import About from "./page/About";
+import Layout from "./Leaut/Leaut";
 
-  return <Routes>
-  <Route path='/' element={<Leaut />}  >
- <Route index element={<Home />} />
- <Route path='/About' element={<About />} />
-  </Route>
-  </Routes>
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout/>} >
+
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      </Route>
+    </Routes>
+  );
 }
-
-export default App

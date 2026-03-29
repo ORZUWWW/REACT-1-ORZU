@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   let url="http://37.27.29.18:8001/api/to-dos"
@@ -26,15 +27,22 @@ useEffect(()=>{
 },[])
 
 
-
+const { t, i18n } = useTranslation();
 
 
   return (
-    <div>
 
- <h1>Salom1</h1>
+    
+     <div>
+      <h1>{t("hello")}</h1>
 
+      <button onClick={() => i18n.changeLanguage("ru")}>
+        RU
+      </button>
 
+      <button onClick={() => i18n.changeLanguage("en")}>
+        EN
+      </button>
     </div>
   )
 }
