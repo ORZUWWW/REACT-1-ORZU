@@ -1,12 +1,11 @@
 import React from 'react'
 import './App.css'
 import axios from 'axios'
-import { Route, Router, Routes } from 'react-router'
+import { Route, Routes } from 'react-router-dom'
 import Leaut from './Leaut/Leaut'
+import About from './page/About'
 import Home from './page/Home'
-import About from './Page/About'
 const App = () => {
-
   return <Routes>
   <Route path='/' element={<Leaut />}  >
  <Route index element={<Home />} />
