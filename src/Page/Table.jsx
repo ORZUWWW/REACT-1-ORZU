@@ -4,9 +4,6 @@ import {
   DialogContent,
 } from "@mui/material";
 
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
-
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "../App.css";
@@ -27,8 +24,6 @@ let [openDelete, setOpenDelete] = useState(false)
 let [deleteId, setDeleteId] = useState(null)
 
 let navigate = useNavigate();
-
-
 
 
 
@@ -92,8 +87,6 @@ let ed=(e)=>{
 
 let [openAdd, setOpenAdd] = useState(false)
 let [openedit, setOpenedit] = useState(false)
-
-
 
 
   let addform = (e) => {
@@ -229,10 +222,7 @@ let [openedit, setOpenedit] = useState(false)
         </div>
       </div>
 
-
-
 <Dialog
-
 open={openAdd}
 onClose={() => setOpenAdd(false)}
 >

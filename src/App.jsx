@@ -8,6 +8,8 @@ import Table from './Page/Table'
 import Info from './Page/Info'
 
 
+
+
 const App = () => {
 
   return <Routes>
