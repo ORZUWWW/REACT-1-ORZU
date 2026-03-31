@@ -35,14 +35,6 @@ const { t, i18n } = useTranslation();
     
      <div>
       <h1>{t("hello")}</h1>
-
-      <button onClick={() => i18n.changeLanguage("ru")}>
-        RU
-      </button>
-
-      <button onClick={() => i18n.changeLanguage("en")}>
-        EN
-      </button>
     </div>
   )
 }
