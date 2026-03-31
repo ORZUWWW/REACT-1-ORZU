@@ -1,50 +1,27 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
-import { useTranslation } from "react-i18next";
+import { useState, useCallback } from "react";
+import { Card } from "../Page/Card";
+function Home() {
+const [count, setCount] = useState(0);
+const [count2, setCount2] = useState(0);
 
-const Home = () => {
-  let url="http://37.27.29.18:8001/api/to-dos"
-  let image="http://37.27.29.18:8001/images"
-  let api="http://37.27.29.18:8001"
-   let [data,setdata]=useState([])  
+const handleClick =useCallback( () => {
+console. log("Clicked");
+}, []);
 
-  
+console. log("Parent render");
 
-async function get() {
-  try {
-    let {data}=await axios.get(url)
-    setdata(data.data)
-  } catch (error) {
-    console.error(error.response.data.error);
-  }
+
+return(
+<>
+
+<p>{count}</p>
+<button onClick={()=>setCount(count + 1)}>111</button> 
+<p>{count2}</p>
+<button onClick={()=>setCount2(count2+ 1)}>1111</button> 
+<Card onClick={handleClick} count={count} />
+</>
+);
+
 }
 
-
-
-
-useEffect(()=>{
-  get()
-},[])
-
-
-const { t, i18n } = useTranslation();
-
-
-  return (
-
-    
-     <div>
-      <h1>{t("hello")}</h1>
-
-      <button onClick={() => i18n.changeLanguage("ru")}>
-        RU
-      </button>
-
-      <button onClick={() => i18n.changeLanguage("en")}>
-        EN
-      </button>
-    </div>
-  )
-}
-
-export default Home
+export default Home;
