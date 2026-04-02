@@ -71,7 +71,7 @@ function reducer(state, action) {
         if(el.id==action.value){
           return {
             ...el,
-            status:!el.status}j
+            status:!el.status}
         }
         return el
       })
