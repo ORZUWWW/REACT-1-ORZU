@@ -125,10 +125,10 @@ function Counter() {
             placeholder="Name..."
             name="inpname"
             value={state.idx?.name || ""}
-            onChange={(e)=>dispatch({
+            onChange={(e)=>{dispatch({
               key:"editname",
               value:e.target.value
-            })}
+            })}}
           />
 
           <input
