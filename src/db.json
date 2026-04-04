@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "category": "Sun-Glasss",
+      "collection": "Current biddd",
+      "img": "../src/images/s1.png",
+      "price": "1.75",
+      "id": "1",
+      "time": "07h 09m 12s"
+    },
+    {
+      "category": "Sun-Glasss",
+      "collection": "Current biddd",
+      "img": "../src/images/s2.png",
+      "price": "1.75",
+      "id": "2",
+      "time": "07h 09m 12s"
+    },
+    {
+      "img": "../src/images/s5.png",
+      "category": "Sun-Glass",
+      "price": "1.75",
+      "collection": "Current bid",
+      "id": "3",
+      "time": "07h 09m 12s"
+    },
+    {
+      "img": "../src/images/s4.png",
+      "category": "NuEvey",
+      "price": "1.25",
+      "collection": "Current bid",
+      "id": "4",
+      "time": "09h 09m 12s"
+    },
+    {
+      "category": "Sun-Glass",
+      "collection": "Current bidl",
+      "img": "../src/images/s5.png",
+      "price": "1.75",
+      "id": "5",
+      "time": "07h 09m 12s"
+    },
+    {
+      "img": "../src/images/s6.png",
+      "category": "NuEvey",
+      "price": "1.25",
+      "collection": "Current bid",
+      "id": "6",
+      "time": "19h 09m 12s"
+    },
+    {
+      "img": "../src/images/s2.png",
+      "category": "Sun-Glass",
+      "price": "1.75",
+      "collection": "Current bid",
+      "id": "7",
+      "time": "07h 09m 12s"
+    },
+    {
+      "img": "../src/images/s1.png",
+      "category": "Sun-Glass",
+      "price": "1.75",
+      "collection": "Current bid",
+      "id": "8",
+      "time": "12h 09m 12s"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
