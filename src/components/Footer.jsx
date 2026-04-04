@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className="pt-[40px] pb-[20px] w-full">
       <div className="w-full">
-        <div className="bg-[#0b0b12]  rounded-[28px] p-[40px] md:p-[35px] w-[90%] m-auto lg:px-[20px] flex flex-col md:flex-row justify-between items-center gap-[30px] shadow-lg">
-          <div className="w-fullmd:max-w-[420px]">
+        <div className="bg-[#0b0b12] rounded-[28px] p-[40px] md:p-[35px] w-[90%] m-auto lg:px-[20px] flex flex-col md:flex-row justify-between items-center gap-[30px] shadow-lg">
+          <div className="w-full md:max-w-[420px]">
             <h1 className="text-white text-[28px] md:text-[36px] font-bold leading-[100%]">
               Create and Sell NFTs
             </h1>
@@ -33,11 +33,7 @@ const Footer = () => {
 
           <div className="w-full md:w-[320px] lg:w-[360px]">
             <div className="rounded-[18px] overflow-hidden">
-              <img
-                src={img6}
-                alt=""
-                className="w-full h-[220px]"
-              />
+              <img src={img6} alt="" className="w-full h-[220px]" />
             </div>
           </div>
         </div>
@@ -57,7 +53,6 @@ const Footer = () => {
           </div>
 
           <div className="mt-[25px] border-t border-gray-700 pt-[20px] flex flex-col gap-[20px] md:flex-row md:justify-between md:items-center text-sm text-gray-500">
-
             <h1>© 2023 EATLY All Rights Reserved.</h1>
 
             <div className="flex gap-[25px] items-center">
@@ -73,4 +68,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
