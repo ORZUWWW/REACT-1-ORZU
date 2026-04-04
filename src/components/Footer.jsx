@@ -1,10 +1,12 @@
 import React from "react";
-import logo from "../images/logo.svg";
-import img1 from "../images/img1.svg";
-import img2 from "../images/img2.svg";
-import img3 from "../images/img3.svg";
-import img4 from "../images/img4.svg";
-import img6 from "../images/img6.svg";
+import i18n from "../i18";
+
+const logo = "/images/logo.svg";
+const img1 = "/images/img1.svg";
+const img2 = "/images/img2.svg";
+const img3 = "/images/img3.svg";
+const img4 = "/images/img4.svg";
+const img6 = "/images/img6.svg";
 
 const Footer = () => {
   return (
@@ -13,20 +15,20 @@ const Footer = () => {
         <div className="bg-[#0b0b12] rounded-[28px] p-[40px] md:p-[35px] w-[90%] m-auto lg:px-[20px] flex flex-col md:flex-row justify-between items-center gap-[30px] shadow-lg">
           <div className="w-full md:max-w-[420px]">
             <h1 className="text-white text-[28px] md:text-[36px] font-bold leading-[100%]">
-              Create and Sell NFTs
+              {i18n.t("createAndSell")}
             </h1>
 
             <p className="text-[#a1a1aa] text-[14px] md:text-[16px] mt-[15px]">
-              World’s Largest NFT Place
+              {i18n.t("worldLargest")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-[15px] mt-[30px]">
               <button className="bg-white text-black font-bold rounded-[12px] px-[25px] py-[14px]">
-                Explore More
+                {i18n.t("exploreMore")}
               </button>
 
               <button className="border border-white text-white font-bold rounded-[12px] px-[25px] py-[14px]">
-                Sell Artwork
+                {i18n.t("sellArtwork")}
               </button>
             </div>
           </div>
@@ -45,15 +47,15 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-[20px] sm:gap-[30px] text-[14px] text-gray-400">
-              <p>Privacy Policy</p>
-              <p>Term & Conditions</p>
-              <p>About Us</p>
-              <p>Contact</p>
+              <p>{i18n.t("privacyPolicy")}</p>
+              <p>{i18n.t("termsConditions")}</p>
+              <p>{i18n.t("aboutUs")}</p>
+              <p>{i18n.t("contact")}</p>
             </div>
           </div>
 
           <div className="mt-[25px] border-t border-gray-700 pt-[20px] flex flex-col gap-[20px] md:flex-row md:justify-between md:items-center text-sm text-gray-500">
-            <h1>© 2023 EATLY All Rights Reserved.</h1>
+            <h1>{i18n.t("rights")}</h1>
 
             <div className="flex gap-[25px] items-center">
               <img src={img1} alt="" />

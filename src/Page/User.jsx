@@ -1,26 +1,67 @@
 import React from "react";
 
-import divimg from "../images/divimg.png";
-import user from "../images/dima.png";
-import s1 from "../images/s1.png";
-import s2 from "../images/s2.png";
-import s3 from "../images/s5.png";
+let divimg = "../../public/images/divimg.png";
+let user = "../../public/images/dima.png";
+let s1 = "../../public/images/s1.png";
+let s2 = "../../public/images/s2.png";
+let s3 = "../../public/images/s5.png";
+
 
 const User = () => {
   const collection = [
-    { id: 1, img: s1, title: "Sun-Glass", price: "1.75", time: "07h 09m 12s" },
-    { id: 2, img: s2, title: "Sun-Glass", price: "1.75", time: "07h 09m 12s" },
-    { id: 3, img: s3, title: "Sun-Glass", price: "1.75", time: "07h 09m 12s" },
-    { id: 4, img: s3, title: "Sun-Glass", price: "1.75", time: "07h 09m 12s" },
-    { id: 5, img: s1, title: "Sun-Glass", price: "1.75", time: "07h 09m 12s" },
-    { id: 6, img: s2, title: "Sun-Glass", price: "1.75", time: "07h 09m 12s" },
+    {
+      id: 1,
+      img: s1,
+      title: "Sun-Glass",
+      price: "1.75",
+      time: "07h 09m 12s",
+    },
+    {
+      id: 2,
+      img: s2,
+      title: "Sun-Glass",
+      price: "1.75",
+      time: "07h 09m 12s",
+    },
+    {
+      id: 3,
+      img: s3,
+      title: "Sun-Glass",
+      price: "1.75",
+      time: "07h 09m 12s",
+    },
+    {
+      id: 4,
+      img: s3,
+      title: "Sun-Glass",
+      price: "1.75",
+      time: "07h 09m 12s",
+    },
+    {
+      id: 5,
+      img: s1,
+      title: "Sun-Glass",
+      price: "1.75",
+      time: "07h 09m 12s",
+    },
+    {
+      id: 6,
+      img: s2,
+      title: "Sun-Glass",
+      price: "1.75",
+      time: "07h 09m 12s",
+    },
   ];
 
   return (
     <div className="w-full px-[20px] md:px-[40px] lg:px-[60px] py-[50px]">
       <div className="max-w-[1400px] mx-auto">
         <div className="w-full h-[190px] md:h-[240px] rounded-[24px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
-          <img src={divimg} alt="" className="w-full h-full object-cover" />
+          <img
+            src={divimg}
+            alt=""
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-[40px] mt-[25px]">
@@ -54,18 +95,30 @@ const User = () => {
 
             <div className="border-t border-[#e5e7eb] mt-[28px] pt-[24px] grid grid-cols-3 gap-[18px]">
               <div>
-                <h2 className="text-[22px] font-extrabold text-[#17181d]">86 ETH</h2>
-                <p className="text-[12px] text-[#9ca3af] mt-[4px]">Total Sales</p>
+                <h2 className="text-[22px] font-extrabold text-[#17181d]">
+                  86 ETH
+                </h2>
+                <p className="text-[12px] text-[#9ca3af] mt-[4px]">
+                  Total Sales
+                </p>
               </div>
 
               <div>
-                <h2 className="text-[22px] font-extrabold text-[#17181d]">12K</h2>
-                <p className="text-[12px] text-[#9ca3af] mt-[4px]">Followers</p>
+                <h2 className="text-[22px] font-extrabold text-[#17181d]">
+                  12K
+                </h2>
+                <p className="text-[12px] text-[#9ca3af] mt-[4px]">
+                  Followers
+                </p>
               </div>
 
               <div>
-                <h2 className="text-[22px] font-extrabold text-[#17181d]">587</h2>
-                <p className="text-[12px] text-[#9ca3af] mt-[4px]">Following</p>
+                <h2 className="text-[22px] font-extrabold text-[#17181d]">
+                  587
+                </h2>
+                <p className="text-[12px] text-[#9ca3af] mt-[4px]">
+                  Following
+                </p>
               </div>
             </div>
 
