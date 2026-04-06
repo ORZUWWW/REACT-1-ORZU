@@ -87,7 +87,7 @@ class Leaut extends Component {
                 to="/user"
                 className="bg-[#111118] text-white rounded-[14px] px-[24px] sm:px-[28px] h-[52px] flex items-center justify-center text-[14px] font-bold hover:bg-[#1d1d27] transition text-center"
               >
-                {i18n.t("connectWallet")}
+                PROFIL
               </Link>
             </div>
           </div>
